@@ -39,7 +39,7 @@ namespace PPC.Controller.Controllers
                 idToUse = "1";
             }
 
-            var response = await _notificationService.GetNotificationsAsync(memberId);
+            var response = await _notificationService.GetNotificationsAsync(idToUse);
 
             if (response.Success)
                 return Ok(response);
